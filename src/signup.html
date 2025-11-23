@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ammad-Raza">
+    <meta name="description"
+        content="Experience a new era of social networking with clean design, smart features, and an active community. Share your world effortlessly and stay connected in style.">
+    <meta name="Robots" content="index, follow">
+
+    <title>Signup My Social Media</title>
+    <link href="../output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <section
+        class="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+
+        <!-- Container -->
+        <div
+            class="w-full max-w-xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-10 animate-[fadeIn_0.8s_ease-out]">
+
+            <!-- Heading -->
+            <h1 class="text-4xl font-bold text-white text-center mb-2">Create Your Account</h1>
+            <p class="text-gray-300 text-center mb-10">Unlock a world of connection in just a few steps.</p>
+
+            <!-- Sign-Up Heading -->
+            <h2 class="text-2xl text-white font-semibold text-center mb-6">Sign Up</h2>
+
+            <!-- Sign-up Form -->
+            <form id="signupForm" novalidate class="space-y-5">
+
+                <!-- Username -->
+                <div>
+                    <label class="text-sm font-medium text-gray-200" for="username">Username*</label>
+                    <input
+                        class="mt-1 w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-lg shadow-sm text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                        type="text" id="username" name="username" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="text-sm font-medium text-gray-200" for="email">Email*</label>
+                    <input
+                        class="mt-1 w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-lg shadow-sm text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                        type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Create Password -->
+                <div>
+                    <label class="text-sm font-medium text-gray-200" for="password">Password*</label>
+                    <input
+                        class="mt-1 w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-lg shadow-sm text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                        type="password" id="password" name="password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div>
+                    <label class="text-sm font-medium text-gray-200" for="confirm-password">Confirm Password*</label>
+                    <input
+                        class="mt-1 w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-lg shadow-sm text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                        type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <!-- Terms and Privacy -->
+                <div class="flex items-center space-x-2">
+                    <input class="w-4 h-4" type="checkbox" id="terms" required>
+                    <label class="text-gray-300 text-sm" for="terms">
+                        I agree to the
+                        <a class="text-blue-400 hover:underline" href="#">Terms</a> &
+                        <a class="text-blue-400 hover:underline" href="#">Privacy Policy</a>.
+                    </label>
+                </div>
+
+                <!-- Signup Button -->
+                <button type="submit"
+                    class="w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold hover:from-blue-600 hover:to-blue-800 transition shadow-lg">
+                    Sign Up
+                </button>
+            </form>
+
+            <!-- Login Link -->
+            <p class="text-center text-gray-300 mt-4">
+                Already have an account?
+                <a class="text-blue-400 hover:underline" href="./login.html">Login</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Link JS -->
+    <script src="signup.js"></script>
+</body>
+
+</html>

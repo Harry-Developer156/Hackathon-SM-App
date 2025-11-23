@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ammad-Raza">
+    <meta name="description"
+      content="Experience a new era of social networking with clean design, smart features, and an active community. Share your world effortlessly and stay connected in style.">
+    <meta name="Robots" content="index, follow">
+    <title>My social media</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Social media login page -->
+    <section class="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+
+    <main class="w-full max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+
+        <!-- Login Form -->
+        <aside class="w-full md:w-5/12 bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl rounded-2xl p-10 animate-[fadeIn_0.8s_ease-out]">
+
+            <!-- App Logo -->
+            <div class="flex justify-center mb-6">
+                <img class="w-24 h-24" src="./Assets/login.png" alt="Login Icon">
+            </div>
+
+            <!-- Login instructions -->
+            <p class="text-center text-gray-300 text-sm mb-6">
+                Please enter your email and password to continue to your journey.
+            </p>
+
+            <!-- Login Form -->
+            <form id="loginForm" novalidate class="space-y-6">
+
+                <!-- Username -->
+                <div>
+                    <label class="text-sm text-gray-300" for="usernameInput">User Name</label>
+                    <input 
+                        class="w-full mt-1 px-4 py-2 bg-white/10 border border-gray-600 text-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                        type="text" id="usernameInput" name="username" placeholder="Enter User Name" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="text-sm text-gray-300" for="emailInput">Email Address</label>
+                    <input 
+                        class="w-full mt-1 px-4 py-2 bg-white/10 border border-gray-600 text-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                        type="email" id="emailInput" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label class="text-sm text-gray-300" for="passwordInput">Password</label>
+                    <input 
+                        class="w-full mt-1 px-4 py-2 bg-white/10 border border-gray-600 text-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                        type="password" id="passwordInput" name="password" placeholder="Enter your password" required>
+
+                    <!-- Forgot Password -->
+                    <div class="flex justify-end mt-2">
+                        <a href="#" 
+                           class="flex items-center gap-2 text-sm text-blue-400 hover:underline transition">
+                            <img class="h-4 w-4" src="./Assets/forgot-password.png" alt="Lock">
+                            Forgot Password?
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Login Button -->
+                <button id="loginBtn"
+                    class="w-full py-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold hover:from-blue-600 hover:to-blue-800 transition shadow-lg"
+                    type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <!-- Sign-Up Link -->
+            <p class="text-sm text-gray-300 text-center mt-6">
+                Don't have an account? 
+                <a class="text-blue-400 hover:underline" href="./signup.html">Sign Up</a>
+            </p>
+        </aside>
+
+        <!-- Welcome Section -->
+        <div class="w-full md:w-7/12 text-center md:text-left animate-[slideIn_1s_ease-out]">
+
+            <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+                My Social Media.
+            </h1>
+
+            <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                Welcome! You’re just a tap away from a place where your voice matters, your moments shine, and your connections grow. Dive in, share boldly, and be part of a community built for you.
+            </p>
+        </div>
+
+    </main>
+</section>
+
+<script src="./login.js"></script>
+</body>
+</html>
